@@ -55,15 +55,17 @@ return this.totalNumberOfVisitorsPerYear() * this.price;
 };
 
 //Extensions
-Park.prototype.removeDinosBySpecies = function (species){
-allBySpecies = [];
-for (dino of this.dinosaurs) {
-  if (dino.species === species) {
-    allBySpecies.push(dino);
-  };
-};
-pos = this.dinosaurs.species.sort.indexOf(species);
-return this.dinosaurs.species.sort.splice(pos, allBySpecies.length);
-};
+// Park.prototype.removeDinosBySpecies = function (species){
+// allBySpecies = [];
+// for (dino of this.dinosaurs) {
+//   if (dino.species === species) {
+//     allBySpecies.push(dino);
+//   };
+// };
+// pos = this.dinosaurs.species.sort.indexOf(species);
+// return this.dinosaurs.species.sort.splice(pos, allBySpecies.length);
+// };
+
+
 
 module.exports = Park;

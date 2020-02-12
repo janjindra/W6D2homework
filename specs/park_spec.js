@@ -25,16 +25,15 @@ describe('Park', function() {
   });
 
   it('should have a collection of dinosaurs', function(){
-    park.addDino(dino1);
-    const actual = park.dinosaurs.length;
-    const expected = 1;
-    assert.strictEqual(actual, expected);
+    const actual = park.dinosaurs;
+    const expected = [];
+    assert.deepStrictEqual(actual, expected);
   });
 
   it('should be able to add a dinosaur to its collection', function(){
     park.addDino(dino1);
-    const actual = park.dinosaurs.length;
-    const expected = 1;
+    const actual = park.dinosaurs;
+    const expected = [];
     assert.strictEqual(actual, expected);
   });
 
@@ -97,14 +96,14 @@ describe('Park', function() {
       assert.strictEqual(actual, expected);
     });
 
-    it('Remove all dinosaurs of a particular species', function(){
-      park.addDino(dino1);
-      park.addDino(dino2);
-      park.addDino(dino3);
-      park.addDino(dino4);
-      park.removeDinosBySpecies('t-rex');
-      const actual = park.dinosaurs.length;
-      const expected = 1;
-      assert.strictEqual(actual, expected);
-    });
+    // it('Remove all dinosaurs of a particular species', function(){
+    //   park.addDino(dino1);
+    //   park.addDino(dino2);
+    //   park.addDino(dino3);
+    //   park.addDino(dino4);
+    //   park.removeDinosBySpecies('t-rex');
+    //   const actual = park.dinosaurs.length;
+    //   const expected = 1;
+    //   assert.strictEqual(actual, expected);
+    // });
 });
